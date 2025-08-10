@@ -4,8 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "<p>ini home ges</p><br/><a href='/about'> masuk ke about page</a>"
+    web_title = "Halaman Utama"
+    return f"<p>{ web_title }</p><br/><a href='/about'>masuk ke about page</a>"
 
 @app.route("/about")
 def about():
-    return "<p>about!</p>"
+    web_title = "Halaman About"
+    return f"<p>{ web_title }</p><br/><a href='/'>kembali</a>"
