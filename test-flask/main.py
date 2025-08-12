@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def main():
-    web_title = "Halaman Utama"
-    return f"<p>{ web_title }</p><br/><a href='/about'>masuk ke about page</a>"
+def home():
+    web_title = 'Halaman Utama'
+    return render_template('home.html', data = web_title)
 
 @app.route("/about")
 def about():
