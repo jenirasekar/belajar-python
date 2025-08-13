@@ -10,4 +10,4 @@ def home():
 @app.route("/about")
 def about():
     web_title = "Halaman About"
-    return f"<p>{ web_title }</p><br/><a href='/'>kembali</a>"
+    return render_template('about.html', data = web_title)
