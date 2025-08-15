@@ -1,1 +1,1 @@
-belajar pythooooooon buat semester 3
+cooking before getting cooked
