@@ -1,18 +1,18 @@
 <html>
-    <head>
-        <title>Cek Usia</title>
-    </head>
-    <body>
-        <h1>Pengecekan Usia Berdasarkan Tahun Lahir</h1>
-        <form method="post" action="/usia">
-            <label>Masukkan tahun lahir</label>
-            <input type="number" name="tahun_lahir" />
-            <button type="submit">hitung usia</button>
-        </form>
-        
-        {% if usia is not none %}
-            <p>usia anda saat ini adalah {{ data }} tahun</p>
-        {% endif %}
-         <a href="/">kembali</a>
-    </body>
+  <head>
+    <title>Cek Usia</title>
+  </head>
+  <body>
+    <h1>Pengecekan Usia Berdasarkan Tahun Lahir</h1>
+    <form method="post" action="/usia">
+      <label>Masukkan tahun lahir</label>
+      <input type="number" name="tahun_lahir" />
+      <button type="submit">hitung usia</button>
+    </form>
+
+    {% if usia is not none %}
+    <p>usia anda saat ini adalah {{ data }} tahun</p>
+    {% endif %}
+    <a href="/">kembali</a>
+  </body>
 </html>
