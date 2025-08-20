@@ -19,4 +19,5 @@ for x in fruits:
 # newlist = [expression for item in iterable if condition == True]
 new_fruits = [x for x in fruits if "a" in x]
 new_fruits.remove("apple")
+new_fruits.append("durian")
 print(new_fruits)
