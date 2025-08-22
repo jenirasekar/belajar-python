@@ -23,5 +23,5 @@
 
 # sort list alphanumerically
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort()
+thislist.sort(reverse = True)
 print(thislist)
